@@ -64,3 +64,23 @@ export function buildAIPrompt(simulation: SimulationRecord) {
       - "needs_adjustment": saldo negativo de até 20% do valor da economia mensal necessária
       - "unfeasible": saldo negativo superior a 20% do valor da economia mensal necessária`;
 }
+
+export function buildAIChatPrompt(
+  simulation: SimulationRecord,
+  message: string
+) {
+  const { income, expenses, debts, goalName, goalAmount, goalDeadline } =
+    simulation;
+
+  return `Você é um assistente financeiro. Use apenas as informações a seguir como contexto da simulação:
+- Meta: ${goalName}
+- Custo da meta: ${goalAmount}
+- Prazo: ${goalDeadline} meses
+- Renda mensal: ${income}
+- Custos fixos: ${expenses}
+- Dívidas / parcelas: ${debts}
+
+A pergunta do usuário é: "${message}"
+
+Responda em português do Brasil, de forma clara e prática, como se estivesse ajudando alguém a entender o plano financeiro. Não invente dados além dos valores fornecidos e mantenha o foco na simulação atual.`;
+}

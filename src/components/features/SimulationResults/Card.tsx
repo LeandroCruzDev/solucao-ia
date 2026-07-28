@@ -1,4 +1,4 @@
-import { Subtitles, type LucideIcon } from 'lucide-react';
+import { type LucideIcon } from 'lucide-react';
 
 interface CardPros {
   icon: LucideIcon;

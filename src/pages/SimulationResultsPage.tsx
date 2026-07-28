@@ -34,7 +34,7 @@ export function SimulationResultsPage() {
           icon={Goal}
           label="Custo de meta"
           value={data.goalAmount}
-          subtitle={data.goalname}
+          subtitle={data.goalName}
         />
         <Card
           icon={CalendarClock}
@@ -52,7 +52,7 @@ export function SimulationResultsPage() {
       </div>
 
       <div className="grid gap-6 lg:grid-cols-3">
-        <AIInsightsCard simulationId={data.id} /> 
+        <AIInsightsCard simulationId={data.id} />
 
         <div className="order-1 flex flex-col gap-6 lg:order-2">
           <Card

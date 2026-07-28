@@ -28,6 +28,8 @@ Este projeto utiliza uma stack de desenvolvimento web moderna:
 ## Funcionalidades (Planejadas e Em Andamento)
 
 - **Formulários Financeiros Interativos**: Entrada guiada para vários parâmetros financeiros.
+- **Histórico de Simulações**: Listagem salva no navegador com acesso rápido às simulações anteriores.
+- **Chat dentro do histórico**: Conversa com IA usando os dados da simulação atual como contexto.
 - **Resultados de Simulação Dinâmicos**: Feedback e projeção em tempo real com base na entrada do usuário.
 - **Visualização de Dados**: Gráficos para ilustrar os resultados financeiros.
 - **Autenticação de Usuário**: Login seguro de usuário e persistência de dados. (Futuro)
@@ -48,8 +50,8 @@ Siga estas instruções para configurar e executar o projeto em seu ambiente loc
 
 ### Pré-requisitos
 
--   [Node.js](https://nodejs.org/) (versão 20.x ou superior)
--   [pnpm](https://pnpm.io/installation)
+- [Node.js](https://nodejs.org/) (versão 20.x ou superior)
+- [pnpm](https://pnpm.io/installation)
 
 ### Instalação
 
@@ -60,7 +62,7 @@ Siga estas instruções para configurar e executar o projeto em seu ambiente loc
     cd solucaoia
     ```
 
-    *(Substitua `seu-usuario` pelo nome de usuário correto do GitHub se for o caso.)*
+    _(Substitua `seu-usuario` pelo nome de usuário correto do GitHub se for o caso.)_
 
 2.  **Instale as dependências:**
 
@@ -74,8 +76,8 @@ Siga estas instruções para configurar e executar o projeto em seu ambiente loc
 
     Este projeto utiliza a API do Google Gemini para fornecer insights financeiros com inteligência artificial. Para que a aplicação funcione corretamente, você precisa configurar sua chave de API.
 
-    -   Crie um arquivo chamado `.env` na raiz do projeto.
-    -   Adicione a seguinte linha ao arquivo `.env`, substituindo `SUA_CHAVE_API_AQUI` pela sua chave real do Google Gemini:
+    - Crie um arquivo chamado `.env` na raiz do projeto.
+    - Adicione a seguinte linha ao arquivo `.env`, substituindo `SUA_CHAVE_API_AQUI` pela sua chave real do Google Gemini:
 
     ```
     VITE_GEMINI_API_KEY=SUA_CHAVE_API_AQUI

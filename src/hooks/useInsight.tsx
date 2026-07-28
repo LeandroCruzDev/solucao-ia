@@ -25,13 +25,14 @@ export const useInsight = (id: string) => {
 
       try {
         const prompt = buildAIPrompt(simulation);
-        const data = await getInsight(prompt);
-        setInsight(data);
+        const insightData = await getInsight(prompt);
 
-        updateSimulation(simulationId, {
+        const simulationWithInsight: SimulationRecord = {
           ...simulation,
-          insight: data,
-        } as SimulationRecord);
+          insight: insightData,
+        };
+        setInsight(insightData);
+        updateSimulation(simulationWithInsight);
       } catch {
         setError('Erro ao gerar o diagnóstico. Tente novamente');
       } finally {

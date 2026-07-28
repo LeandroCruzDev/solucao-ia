@@ -24,7 +24,7 @@ export function Divider({
       role="separator"
       aria-orientation={orientation}
       style={style}
-      className={['bg-borde', classNamesByOrientation[orientation]]
+      className={['bg-borde', classNamesByOrientation[orientation], className]
         .filter(Boolean)
         .join(' ')}
     ></div>
