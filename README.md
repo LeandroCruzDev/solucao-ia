@@ -99,8 +99,8 @@ A aplicação estará disponível em `http://localhost:5173` (ou em outra porta,
 
 Estou sempre aberto a discutir este projeto, oportunidades potenciais ou desenvolvimento de software em geral.
 
-- **LinkedIn**: [Seu URL do Perfil do LinkedIn] _(Por favor, substitua pelo seu URL real do perfil do LinkedIn)_
-- **GitHub**: [Seu URL do Perfil do GitHub] _(Por favor, substitua pelo seu URL real do perfil do GitHub)_
+- **LinkedIn**: (https://www.linkedin.com/in/leandro-cruz-dev/)
+- **GitHub**: (https://www.github.com/LeandroCruzDev)
 
 ---
 
